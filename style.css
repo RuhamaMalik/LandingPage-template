@@ -155,7 +155,7 @@ nav a:hover {
 .item2-1 {
     display: grid;
     grid-template-rows: 80px 310px;
-   
+
 }
 
 .popup {
@@ -165,16 +165,17 @@ nav a:hover {
     border-radius: 14px;
     background: #FFF;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.25);
-        display: flex;
+    display: flex;
     align-items: center;
 
 }
 
-.img1{
-    background: url("./assets//images/dp.png") no-repeat center ;
-    background-size:70%;
+.img1 {
+    background: url("./assets//images/dp.png") no-repeat center;
+    background-size: 70%;
     height: 50px;
 }
+
 .popu-text {
     color: #9CA0AC;
     font-size: 10px;
@@ -184,17 +185,18 @@ nav a:hover {
 
 .profile {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     padding: 5px 4px;
     border-radius: 8.945px;
     background: url("./assets/images/profile.png") no-repeat;
-   background-size: cover;
+    background-size: cover;
 }
 
-.status{
+.status {
     display: flex;
     gap: 4px;
 }
+
 .insta {
     padding: 4px 2px 2px 4px;
     background: #FFF;
@@ -220,7 +222,7 @@ nav a:hover {
 
 .status2 {
     background: rgba(255, 255, 255, 0.50);
-  
+
 }
 
 .profLogo,
@@ -230,7 +232,7 @@ nav a:hover {
     align-items: center;
     width: 42%;
     margin-top: 4px;
- 
+
 }
 
 .profLogo1,
@@ -263,35 +265,42 @@ nav a:hover {
 
 .item2-2 {
     width: 38%;
+
+
 }
 
 .card {
-height: 180px;
-width: 120px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-   padding: 8px 2px 16px 4px;
-    box-shadow: -20px 0px -20px 0px rgba(0, 0, 0, 0.10);}
-.card1{
-    background: url("./assets/images/card1.png") no-repeat center;
-    background-size: cover ;
+    height: 180px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 2px 16px 4px;
+    box-shadow: -20px 0px -20px 0px rgba(0, 0, 0, 0.10);
 }
-.card b{
+
+.card1 {
+    background: url("./assets/images/card1.png") no-repeat center;
+    background-size: cover;
+}
+
+.card b {
     font-size: 8.5px;
 }
-.card2{
+
+.card2 {
     background: url("./assets/images/card2.png") no-repeat center;
-    background-size: cover ;
+    background-size: cover;
 }
 
 .cardLogo {
-   
+
     width: 82%;
     font-size: 8.5px;
 
 }
-.icon{
+
+.icon {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -376,7 +385,7 @@ justify-content: space-between;
 
     .home {
 
-        height: 850px;
+        height: max-content;
         /* grid-template-rows: 9% 65% 12%;    */
         grid-template-rows: 70px 850px 100px;
         border: 1px solid salmon;
@@ -386,7 +395,7 @@ justify-content: space-between;
     }
 
     .home>div {
-        border: 1px solid rgb(117, 22, 11);
+        /* border: 1px solid rgb(117, 22, 11); */
 
     }
 
@@ -397,11 +406,43 @@ justify-content: space-between;
 
     }
 
-.item2-2{
-    flex-direction: row;
+    .item2 {
+
+        /* width: 50%; */
+        justify-content: center;
+        /* border: 1px solid rgb(117, 22, 11); */
+
+    }
+
+    .item2-2 {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        /* border: 1px solid rgb(117, 22, 11); */
+        align-items: center;
+    }
+
+    .card {
+        height: 250px;
+        width: 150px;
+        border-radius: 30px;
+        padding: 12px 2px 16px 4px;
+    
+    }
 }
+@media (max-width: 650px) {
+.item2-2{
+    flex-direction: column;
+}
+.card {
+    height: 180px;
+    width: 120px;
+    border-radius: 30px;
+    padding: 12px 2px 16px 4px;
+
 }
 
+}
 @media (max-width: 500px) {
     .blueBtn {
         display: none;
@@ -414,7 +455,43 @@ justify-content: space-between;
     .logos .smImg {
         width: 25px;
     }
+    .list {
+    
+        width: 95%;
+    }
+    .item2-1{
+        grid-template-columns: 150px;
+    }
+    /* .popup{
+       margin-left: -20px;
+    } */
+    .card {
+        height: 160px;
+        width: 100px;
+    }    
+.card1{
+    margin-bottom: -110px;
+}
+.card2{
+    margin-bottom: -40px;
+ 
+}
+.insta{
+    width: 38px;
+    margin: 150px 0 0 -18px;
+}
+.logos , .homeC3>p{
+    width: 98vw;
+    justify-items:center ;
+}
 
+.logos img{
+    width: 40px;
+}
+    /* .profile, .popup
+    {
+        width:90%;
+    } */
     /* .logos img {
        
         width: 30px;
