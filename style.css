@@ -447,7 +447,9 @@ nav a:hover {
     .blueBtn {
         display: none;
     }
-
+.visible{
+    display: block;
+}
     .btns a {
         margin-right: 10px;
     }
